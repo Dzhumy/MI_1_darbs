@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <title>1. Praktiskais darbs</title>
+</head>
+<body>
+    <hr>
+    <h1> Mākslīgā intelekta pamati 1. praktiskais darbs</h1>
+    <hr>
+    <h2> &#127918 SPĒLE "Skaitļu jampadracis" &#128187</h2>
+    <p>Spēles galvenais mērķis ir katram spēlētājam maksimizēt vai minimizēt punktu skaitu, atkarībā no tā kurš spēlētājs uzsāk spēli!</p>
+    <p>Spēlētājiem ir dota skaitļu virkne "1-2-4-4-2-1" ar kuru jādarbojas visas spēles garumā līdz izpaliek tikai viens skaitlis!</p>
+    <br>
+    <h3>SPĒLES NOTEIKUMI:</h3>
+    <p class="rules"> - Spēlētāji uzsāk spēli ar skaitļu virkni "1-2-4-4-2-1"
+                <br>  - Spēlētājs, kas veic gājienu var izvēlēties tikai 2 skaitļus, kurus summēt
+                <br>  - Ja skaitļu summa ir lielāka par 5, tad šos skaitļus aizvieto ar skaitli 1 un kopīgajam skaitam pieskaita 5 punktus.
+                <br>  - Ja skaitļu summa ir mazāka par 5, tad šos skaitļus aizvieto ar skaitli 3 un kopīgajam skaitam atņem 5 punktus.
+                <br>  - Ja skaitļu summa ir vienāda ar 5, tad šos skaitļus aizvieto ar skaitli 2 un kopīgajam skaitam pieskaita 3 punktus.
+                <br>  - Ja kopīgais punktu skaits ir lielāks par 8, tad uzvar spēlētājs, kas uzsāka spēli, pretējā gadījumā uzvar spēlētājs, kas spēli uzsāka otrais.
+    </p>
+    <div class="scoreboard">
+       <div class="scoreboard_title scoreboard_title_human">Cilvēks</div>
+        <div class="scoreboard_title scoreboard_title_ai">Mākslīgais intelekts</div>
+        <div class="scoreboard_points" id="scoreboard_points_human">0</div>
+        <div class="scoreboard_points" id="scoreboard_points_ai">0</div>
+    </div>
+
+        <div id="gameBoard"></div>
+        <h2 id = "moveMathHuman"></h2>
+        <h2 id = "moveMathAI"></h2>
+        <h2 id="player_points"></h2>
+        <h2 id="winner"></h2>
+        <div id="playerSelectionMenu">
+            <label for="selection">Izvēlieties spēlētāju, kas sāks spēli:</label>
+            <select name="selection" id="izvele">
+                <option value="human">Cilvēks</option>
+                <option value="ai">Mākslīgais Intelekts</option>
+            </select>
+        </div>
+    
+
+    <button class="start_button" id="poga" onclick="startGame()">Sākt!</button>
+    <br>
+    
+    <script src="main.js"></script>
+    <footer>Autors: Edgars Dudins 201RDB096 3.grupa </footer>
+</body>
+</html>

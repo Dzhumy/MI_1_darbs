@@ -1,0 +1,88 @@
+body {
+    margin-top:150px;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+}
+
+footer {
+    bottom: 5px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.rules {
+    background-color:bisque;
+    color: black;
+    line-height: 25px;
+    border: 2px solid black;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.scoreboard{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.scoreboard_title, .scoreboard_score{
+    padding: 5px;
+}
+
+.scoreboard_title {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.scoreboard_title_human {
+    color: green;
+}
+
+.scoreboard_title_ai {
+    color: red;
+}
+
+.scoreboard_points {
+    font-size: 2em;
+}
+
+.gameBlock{
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+
+#gameBoard {
+    height: 400px;
+    width: 564px;
+    border: 15px solid rgb(97, 97, 97);
+    background-color: gray;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.start_button {
+    background-color: rgb(200, 224, 186);
+    border: none;
+    font-size: 15px;
+    padding: 15px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tile {
+    height: 80px;
+    width: 80px;
+    margin: 5px;
+    background-color: white;
+    border:2px solid black;
+    border-radius: 30%;
+    font-size: 60pt;
+    align-content: center;
+}
